@@ -1,0 +1,120 @@
+{
+    "metadata": {
+        "title": "Name the Paper/Project/Thesis/Dataset",
+        "creators": [
+            {
+                "Name": "Jay Doe",
+                "ORCID": "0000-0001-2345-6789",
+                "Email": "jaydoe@domain.edu"
+            },
+            {
+                "Name": "May Poe",
+                "ORCID": "0650-7601-9545-6747",
+                "Email": "maypoe@niamod.edu"
+            },
+            {
+                "Name": "Noel Mail",
+                "ORCID": "1234-1234-1234-1234"
+            },
+            {
+                "Name": "None Orcid",
+                "Email": "noneorcid@niamod.edu"
+            },
+            {
+                "Name": "Only Name"
+            }
+        ],
+        "publisher": "<p>Institute of Fancy Science<br>Department of Amazing Science<br>Imaginary Street 42<br>D-01234 ImaginaryTown<br>Country</p>",
+        "contributor": [
+            {
+                "Name": "Kay Roe",
+                "ORCID": "9876-5432-0001-0000",
+                "Email": "kayroe@niamod.edu"
+            },
+            {
+                "Name": "Leo Zoe",
+                "ORCID": "9653-0032-0001-xxxx",
+                "Email": "leozoe@niamod.edu"
+            },
+            {
+                "Name": "No Orcid",
+                "Email": "noorcid@niamod.edu"
+            },
+            {
+                "Name": "Noe Email",
+                "ORCID": "4321-4321-4321-4321"
+            },
+            {
+                "Name": "One SurName"
+            }
+        ],
+        "description": "<p>Exemplary test case to verify the parser and priovide a metadata JSON.<br>Data have been published at Zenodo under CC-BY 4.0, see https://zenodo.org/doi/10.5281/zenodo.XYZ .</p>",
+        "subject": [
+            [
+                "Parser",
+                "ListOfKeyWords",
+                "Python"
+            ]
+        ],
+        "date": "2024-07-01",
+        "language": [
+            [
+                "en-US",
+                "de-DE"
+            ]
+        ],
+        "format": [
+            [
+                "csv",
+                "docx",
+                "pdf"
+            ]
+        ],
+        "type": "Text",
+        "coverage": "2019-2024",
+        "identifier": "https://doi.org/10.5281/zenodo.PUBLISHED_THESIS",
+        "method": [
+            {
+                "identifier_source": "Method01XYZ",
+                "relation_type": "hasURL",
+                "identifier_destination": "https://github.com/FakeUser/FakeProject/releases/tag/v1.0"
+            },
+            {
+                "identifier_source": "Method01XYZ",
+                "relation_type": "hasDependency",
+                "identifier_destination": "https://github.com/FakeProjectDependsOn/releases/tag/v2.2.2"
+            },
+            {
+                "identifier_source": "Method01XYZ",
+                "relation_type": "hasDOI",
+                "identifier_destination": "https://doi.org/10.5281/zenodo.ZYX"
+            }
+        ],
+        "source": [
+            {
+                "identifier_source": "PhD-Thesis",
+                "relation_type": "IsPartOf",
+                "identifier_destination": "https://doi.org/10.5281/zenodo.ABC"
+            }
+        ],
+        "relation": [
+            {
+                "identifier_source": "Experiment",
+                "relation_type": "IsPartOf",
+                "identifier_destination": "PhD-Thesis"
+            },
+            {
+                "identifier_source": "PhD-Thesis",
+                "relation_type": "IsReferencedBy",
+                "identifier_destination": "https://doi.org/10.5281/DOI.OF.PAPER"
+            }
+        ],
+        "rights": [
+            {
+                "identifier_source": "CC-BY-4.0",
+                "relation_type": "hasURL",
+                "identifier_destination": "https://creativecommons.org/licenses/by/4.0/"
+            }
+        ]
+    }
+}
