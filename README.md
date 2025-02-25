@@ -1,10 +1,9 @@
 # ParsingMetadataMD2JSON
-Simplistic parser to convert Markdown metadata file for a given [M_README.md](https://zenodo.org/doi/10.5281/zenodo.10648863) with identifiers similar to [DublinCore terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
-to a simplistic JSON file for further processing. The JSON file is inspired by the [ZENODO.json schema](https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json), see also [ZENODO developers guide](https://developers.zenodo.org/#representation). Metadata information (data on data) are crucial to find and understand your data in your project tree and these JSON files can be used for further data processing, e.g. to create a database catalog for your files or to provide additional metadata in public repository. Feel free to adapt it to your needs.
+Simplistic parser to convert Markdown metadata file for a given [M_README.md](https://doi.org/10.5281/zenodo.14848834) with identifiers similar to [DublinCore terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) to a simplistic JSON file for further processing. The JSON file is inspired by the [ZENODO.json schema](https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json), see also [ZENODO developers guide](https://developers.zenodo.org/#representation). Metadata information (data on data) are crucial to find and understand your data in your project tree and these JSON files can be used for further data processing, e.g. to create a database catalog for your files or to provide additional metadata in public repository. Feel free to adapt it to your needs.
 
 ## Getting Started
 
-Follow these instructions to run the application `ParsingMetadataMD2JSON`.
+Follow these instructions to run the application `ParsingMetadataMD2JSON` with `Python`.
 
 ### Prerequisites
 
@@ -28,7 +27,7 @@ Requirements for the software:
     ``` bash
     SUCCESS: M_Dataset_README_Example.md parsed to M_Dataset_README_Example.json
     ```
-* alternatively, run and use the Jupyter notebook `ParsingMetadataMD2JSON.jpynb` with
+* alternatively, run and use the Jupyter notebook `ParsingMetadataMD2JSON.ipynb` with
     ``` bash
     jupyter-lab ParsingMetadataMD2JSON.ipynb
     ```
@@ -68,4 +67,4 @@ The following keywords will be parsed and converted:
 
 ## License
 
-This project is licensed under the [Unlicense](LICENSE.md).
+This project is licensed under the [Unlicense](LICENSE).
