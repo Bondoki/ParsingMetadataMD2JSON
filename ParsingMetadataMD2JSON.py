@@ -28,11 +28,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <https://unlicense.org>
 """
 
-from pathlib import Path
-import re
-import json
-import sys
-
 from pathlib import Path  # Importing Path class from pathlib for file path manipulations
 import re    # Importing re for regular expression operations
 import json  # Importing json for handling JSON data
@@ -42,7 +37,7 @@ import sys   # Importing sys for command line argument handling
 def show_help():
     """Display the help message for the script."""
     print("Usage:")
-    print("./ParsingMetadataMD2JSON [options] <input file>...")
+    print("./ParsingMetadataMD2JSON [options] <input file.md>...")
     print("Options:")
     print("--help            Show this screen.")
     print()
@@ -61,6 +56,13 @@ def main() -> int:
         show_help()  # Call the help function
         return 0  # Exit after showing help
     
+    # Check for unknown arguments
+    for arg in args:
+        if not arg.startswith('--help') and not arg.endswith('.md'):
+            print(f"Error: Unknown argument '{arg}'.")
+            show_help()
+            sys.exit(1)
+    
     # Get the file to convert
     try:
         md_path = Path(args[0])
@@ -72,6 +74,7 @@ def main() -> int:
         show_help()  # Show help message
         sys.exit(1)  # Exit the program with an error code as something went wrong
     
+    # read the file to convert and parse
     with open(str(md_path), "r", encoding="utf-8") as f:
         contents = f.read()#.replace("\r", "") # Remove Windows style line breaks
 
